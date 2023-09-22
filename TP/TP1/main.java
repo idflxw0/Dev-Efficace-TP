@@ -1,3 +1,5 @@
+package TP.TP1;
+
 import java.util.Random;
 public class main {
     public static boolean containsTrue1(boolean tab[]){
