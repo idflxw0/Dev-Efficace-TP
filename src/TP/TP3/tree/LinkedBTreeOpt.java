@@ -73,4 +73,5 @@ public class LinkedBTreeOpt<T> implements BinaryTree<T> {
 			return new LinkedBTreeOpt<>(t.getValue());
 		return new LinkedBTreeOpt<>(t.getValue(), convert(left), convert(right));
 	}
+
 }

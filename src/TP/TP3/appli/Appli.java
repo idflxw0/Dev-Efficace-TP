@@ -35,6 +35,9 @@ public class Appli {
 		System.out.println(t + " (" + t.size() + ")" + " (" + tr.maxDepth(tr) +")");
 		tr = LinkedBTreeOpt.convert(t);
 		System.out.println(tr + " (" + tr.size() + ")");
+
+		LinkedBTree unbalancedTree = new LinkedBTree<>(1);
+
 	}
 
 	private static Random r = new Random();

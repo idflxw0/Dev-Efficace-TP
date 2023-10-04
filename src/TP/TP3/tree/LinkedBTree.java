@@ -54,6 +54,13 @@ public class LinkedBTree<T> implements BinaryTree<T> {
 		assert(!isEmpty());
 		return new LinkedBTree<>(root.right);
 	}
+
+	public void addLeft(BinaryTree<T> left){
+		this.root.left = new Node<>(left.getValue(),null,null);
+	}
+	public void addRight(BinaryTree<T> right){
+
+	}
 	
 	public String toString() {
 		return format();
