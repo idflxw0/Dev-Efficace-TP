@@ -1,10 +1,10 @@
 package TD.TD3;
 
-public class LinkedBTree<T> implements BTree{
-    private static class Node<T> {
-        T node;
-        Node<T> left;
-        Node<T> right;
+public class LinkedBTree<T> implements BTree<T>{
+    protected static class Node<T> {
+        public T node;
+        public Node<T> left;
+        public Node<T> right;
         public  Node(T node) {
             this.node = node;
             this.left  = this.right = null;
@@ -15,7 +15,7 @@ public class LinkedBTree<T> implements BTree{
             this.right = right;
         }
     }
-    private Node<T> root;
+    protected Node<T> root;
     public LinkedBTree() {
         this.root = null;
     }
@@ -31,7 +31,7 @@ public class LinkedBTree<T> implements BTree{
         return root == null;
     }
     @Override
-    public Object getValue() {
+    public T getValue() {
         assert(!isEmpty());
         return root.node;
     }
